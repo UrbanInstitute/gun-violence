@@ -1,0 +1,637 @@
+/*general page style*/
+*:focus{
+    outline: none;
+}
+body {
+    margin: 1 1em;
+    padding: 1 1em;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 200%;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+
+@media  (min-width: 781px) {
+    body {
+        font-size:1.5em;
+    }  
+     
+}
+
+@media (max-width: 780px) {
+    body {
+        font-size:1.2em;
+    }
+   h2{
+        display: none;
+    }
+    
+     
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9em;
+    }
+    h2{
+        display: none;
+    }
+
+
+    
+}
+
+@media (max-width: 500px) {
+
+    #sidebar { 
+        display: none; 
+    }
+
+    #isMobile { 
+        display: block !important; 
+    }
+    #mobile_bar{
+        display: block !important;
+    }
+    h2{
+        display: block;
+    }
+
+
+}
+
+
+
+#isMobile { 
+    display: none; 
+}
+
+
+
+
+html, body {
+	margin: 1 1em;
+	padding: 1 1em;
+}
+
+.row {
+    width: 700px;
+	/*height: 100%;*/
+}
+
+.col-md-12 {
+	height: 350px;
+	margin: 0 auto;
+    padding: 0px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    line-height: 1.2em;
+}
+
+h1 {
+    font: 1.2em Lato, sans-serif;
+    margin: 0 0em;
+}
+
+h2 {
+    font: 1.5em Lato, sans-serif;
+    margin: 0 0 .5em;
+}
+
+h4 {
+    font: 1em Lato, sans-serif;
+    margin: 0 0 .5em;
+}
+
+
+a {
+    color: #fdbf11;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fdbf11;
+    text-decoration: none;
+}
+
+p,
+ul,
+li {
+    font: 400 16px/24px Lato, sans-serif;
+    margin: 0 0 .5em;
+    color: #333;
+}
+
+p {
+    max-width: 700px;
+}
+
+p.large {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+p.bold {
+    font-weight: 700;
+}
+
+hr {
+    width: 200px;
+    border: 0 !important;
+    height: 1px;
+    border-bottom: 6px solid #1696d2 !important;
+    border-bottom-color: #1696d2 !important;
+    color: #1696d2 !important;
+    margin-top: 45px !important;
+    margin-bottom: 45px !important;
+    margin-right: 100%;
+    display: block;
+    float: left;
+}
+
+h3.sectiontitle {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+#main {
+    width: 100%;
+    padding: 0px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #f1f2f2;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    bottom: 0;
+    font-size: 16px;
+}
+
+
+
+/* buttons */
+
+.buttons {
+    width: 100% !important;
+    display: table;
+    margin-bottom: 10px;
+}
+
+.urban-button {
+    width: 16.66%;
+    font-size: 1.1em;
+    font-family: Lato, sans-serif;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #666666;
+    display: table-cell;
+    line-height: 14px;
+    text-align: center;
+    margin-right: 0px;
+    white-space: normal !important;
+    border-radius: 0px;
+}
+
+
+
+.urban-button:hover,
+.urban-button.selected,
+.urban-button.active,
+.urban-button:checked {
+    background-color: #1696d2;
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.urban-button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* maps */
+
+#map-holder {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+    margin: 0 auto;
+}
+
+.map {}
+
+#map {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+}
+
+#sidebar {
+    position: absolute;
+    top: 0%;
+    left: 0%
+    bottom: 0;
+    width: 30%;
+    height: 25%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: "Lato";
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+ }
+
+ #sidebar h1 {
+    margin-bottom: .5em;
+ }
+
+
+
+/*mobile info */
+
+#mobile_bar {
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+    height: 65px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: "Lato";
+    padding-left: 10px;
+    display: none;
+    background: #e3e3e3;
+    width: 100%;
+    left: 0;
+    padding-top: 5px;
+    z-index: 2;
+ }
+
+ #mobile_bar{
+    
+}
+h2{
+    top: 12px;
+    left: -5px;
+    position: relative;
+}
+
+
+ #mobile_header {
+ 	display: table;
+ 	outline: none;
+ 	text-align: center;
+ 	width: 100%;
+ }
+
+ .city_header {
+ 	display: table-cell;
+    width: 50%;
+    font-size: 1.1em;
+    line-height: 12px;
+    text-align: center;
+    margin-right: 0px;
+    white-space: normal !important;
+    border-radius: 0px;
+
+ }
+
+  .city_info {
+ 	display: table-cell;
+ 	clear: both;
+    width: 50%;
+    font-size: 1.3em;
+    line-height: 12px;
+    text-align: left;
+    margin-left: 8px;
+    white-space: normal !important;
+    border-radius: 0px;
+ }
+/*graphs*/
+
+span .ui-selectmenu-text {
+    font-size: 14px;
+}
+
+.pointlabel {
+    font-size: 11px;
+}
+
+.axis,
+.axis-show {
+    font-size: 11px;
+    color: #333;
+}
+
+.axis path {
+    display: none;
+}
+
+.axis-show path,
+.axis-show line {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis line {
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis .minor line {
+    stroke: #efefef;
+}
+
+.area {
+    fill: #cfe8f3;
+    stroke-width: 0;
+}
+
+.charttitle {
+    font-size: 13px;
+    /*font-weight: 700;*/
+    font-style: italic;
+}
+
+.axistitle {
+    font-style: italic;
+    font-size: 13px;
+}
+
+
+/*custom for this project*/
+
+.dot {
+    opacity: 0.5;
+    fill: #1696d2;
+}
+
+.dot:hover {
+    opacity: 1;
+    stroke-width: 2px;
+    stroke: #000000;
+}
+
+.tooltip .tooltip-mobile .tooltiptext{
+    
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+    border: 1px solid #aaa;
+    pointer-events: none;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.tooltip-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+
+
+
+.tooltip-number {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.chartline {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    stroke-dasharray: 3, 3;
+}
+
+.selected {
+    opacity: 1;
+    /*fill: #fdbf11;*/
+    fill: #000000;
+}
+
+.axis-light {
+    font-size: 11px;
+    color: #333;
+}
+
+.axis-light path {
+    display: none;
+}
+
+.axis-light line {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #efefef;
+    shape-rendering: crispEdges;
+}
+
+.axis-light .minor line {
+    stroke: #efefef;
+}
+
+
+
+
+.container {
+    margin-left: 0;
+}
+
+/*bar graphs */
+
+
+
+
+.bar_blue {
+    fill: #1696d2;
+}
+
+
+.bar_grey {
+    fill: #696969;
+}
+
+
+.bar_yellow {
+    fill: #fdbf11;
+}
+
+.axis--x path {
+    opacity: 1;
+    stroke: #000000;
+    stroke-width: 3px;
+}
+.axis line{
+    display: none;
+}
+
+.axis line {
+    opacity: 1;
+    stroke: #DEDDDD;
+    stroke-width: 1px;
+
+}
+
+.axis path {
+     opacity: 1;
+    stroke: #000000;
+    stroke-width: 3px;
+}
+
+.axis, .axis-show {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+}
+
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip http://bl.ocks.org/Caged/6476579 */
+p.tooltip_text {
+font: 12px "Lato", sans-serif;
+margin: 0 0 .5em;
+color: #666;
+}
+div.chartTooltip {   
+position: absolute;         
+text-align: center; 
+vertical-align: middle;        
+padding: 5px;               
+background: white; 
+border: 0px;        
+border-radius: 6px;         
+pointer-events: none;         
+}
+
+#cities{
+    display: none;
+}
+.city-label{
+    position: relative;
+    top: -3px;
+    text-transform: uppercase;
+    color: #1696d2;
+    display: block;
+    font-weight: normal;
+}
+
+.align {
+    float: left;
+}
+
+.ui-selectmenu-button.ui-button {
+    height:45px;
+    margin-bottom: 10px;
+}
+
+.btn-toolbar {
+    float: right;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+
+p.tooltip_text {
+    font: 12px Lato, sans-serif;
+    margin: 0 0 .5em;
+    color: #666;
+}
+div.chartTooltip {   
+position: absolute;         
+text-align: center; 
+vertical-align: middle;        
+padding: 5px;               
+background: white; 
+border: 0px;        
+border-radius: 6px;         
+pointer-events: none;         
+}
+
+.axistitle {
+    font-size: 13px;
+    font-style: italic;
+    color: #000000;
+
+}
+
+
+.grid line {
+  stroke: #DEDDDD;
+  stroke-opacity: 1;
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+}
+.grid line.gridLine-0{
+    stroke: #000;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+
+/*LEGEND*/
+#retail-circle {
+    fill: #fdbf11;
+    z-index: 3;
+}
+#all-circle {
+    fill: #1696d2;
+    z-index: 3;
+}
+
+.legend div span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+    z-index: 3;
+}
+
+.legend {
+    background-color: #fff;
+    border-radius: 3px;
+    bottom: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    font: 12px 'Lato', sans-serif;
+    padding: 10px;
+    position: absolute;
+    left:2%;
+    bottom: 14%;
+    z-index: 3;
+}
+

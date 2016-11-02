@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"-->
+    <meta name="viewport" content="width=device-width">
+
+    <title></title>
+
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+
+<div id = "isMobile"></div> 
+
+    <div id="main" class="container">
+        <div id="main" class="container">
+            <div class="row">
+
+            <div class="col-md-8 col-md-offset-1">
+                <div id="base-btns" class="buttons" data-toggle="buttons">
+                    <label class="urban-button btn active btn-responsive" id="G1A2012.x" value="all">
+                    ALL BUSINESSES
+                        <input type="radio" name="radio-base" value="all">
+                    </label>
+                    <label class="urban-button btn btn-responsive" id="G1B2012.x" value="retail">
+                    RETAIL AND SERVICE BUSINESSES
+                        <input type="radio" name="radio-base" value="retail">
+                    </label>
+                </div>
+           
+            </div>
+
+            <div class="col-md-10 col-md-offset-1">
+                <div id="map-holder">
+                    <div id="map" class="map">
+                    </div>
+                    <div id='all-legend' class='legend'>
+                        <div><span style='background-color: #cfe8f3'></span>Low</div>
+                        <div><span style='background-color: #1696d2'></span></div>
+                        <div><span style='background-color: #0a4c6a'></span>High</div>
+                    </div>
+                        <div id='sidebar'>
+                            <div id="tooltip-name"></div>
+                            <div id='tooltip'></div>
+                        </div>
+                </div>
+                <div id="mobile_bar">
+                    <div id="mobile_header">
+                        <div class="city_header">
+                            <h2>Oakland, CA
+                            </h2>
+                        </div>
+                        <div class="city_info">
+                            <div id="tooltip-name-mobile">
+                            </div>
+                            <div id='tooltip-mobile'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="lib/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>    
+    <script type="text/javascript" src="lib/topojson.min.js"></script>
+    <script type="text/javascript" src="lib/modernizr.svg.min.js"></script>
+    <script type="text/javascript" src="lib/pym.min.js"></script>
+    <script type="text/javascript" src="js/map_Oak.js"></script>
+
+
+
+</body>
+
+</html>
